@@ -1,0 +1,56 @@
+header {
+	.navbar-default {
+		background-color: $transparent;
+		border-color: $transparent;
+		.navbar-toggle {
+			border: $reset;
+			background: $soft_pink;
+			&:focus {
+				background: $soft_pink;
+			}
+			&:hover {
+				background: $dark_blue;
+			}
+			.icon-bar {
+				background: $white;
+			}
+		}
+		.navbar-nav {
+			li {
+				a {
+					font-family: $main-font;
+					font-size: 24px;
+					color: $cyan;
+				}
+			}
+		}
+		.navbar-header {
+			.navbar-toggle {
+				margin-top: 50px;
+			}
+		}
+	}
+	.subscription-box {
+		padding: 10px 5px 15px;
+		margin: 15px auto 0;
+		border-radius: $rounded2x;
+		background: $soft_pink;
+		color: $white;
+		h3 {
+			margin: 10px 0;
+			font-size: 20px;
+		}
+		input {
+			background: $white;
+			border: $reset;
+			border-radius: $rounded;
+			width: 70%;
+			padding: 8px;
+		}
+		input[type="submit"] {
+			background: #ea017d;
+			width: 15%;
+			margin-left: 2px;
+		}
+	}
+}

@@ -1,6 +1,20 @@
 body {
 	font-family: 'Open Sans', sans-serif;
+	background:url(../images/background-pattern.png) repeat;
 }
 h1,h2,h3,h4,h5,h6 {
-	font-family: 'Unkempt';
+	font-family: $main-font;
+}
+.no-float {
+	float: $no-float;
+}
+.outline {
+	display: none;
+	visibility: none;
+}
+.wrapper {
+	background: $white;
+	border-radius: $rounded;
+	margin: 15px auto;
+	padding: 25px 0;
 }
