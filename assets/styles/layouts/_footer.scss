@@ -1,0 +1,19 @@
+footer {
+	background: $cyan;
+	padding: 10px 0;
+	color: $white;
+	font-size: 12px;
+	h3 {
+		font-size: 20px;
+	}
+	a {
+		color: $white;
+	}
+	ul {
+		padding: $reset;
+		list-style: none;
+		li {
+			line-height: 15px;
+		}
+	}
+}
