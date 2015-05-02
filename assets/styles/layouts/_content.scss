@@ -1,0 +1,26 @@
+.main {
+	.col-md-8 {
+		padding: $reset;
+		.thumbnail {
+			margin-right: 25px;
+			background: $soft_pink;
+			border-radius: $reset;
+			padding: 6px;
+		}
+		.article {
+			clear: right;
+		}
+		.entry-title {
+			a {
+				color: $dark_blue;
+			}
+		}
+		.entry-summary , time {
+			color: $soft_pink;
+		}
+		time {
+			margin-bottom: 4px;
+			display: inline-block;
+		}
+	}
+}
