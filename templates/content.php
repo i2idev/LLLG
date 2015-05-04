@@ -1,11 +1,18 @@
 <article <?php post_class(); ?>>
-  <header>
   	<div class="pull-left thumbnail"><?php the_post_thumbnail(); ?></div>
-    <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+  	<div class="pull-left">
+	<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
     <?php get_template_part('templates/entry-meta'); ?>
-  </header>
-  <div class="entry-summary">
+ 	<div class="entry-summary">
     <?php // the_excerpt(); ?>
-    <?php echo substr(get_the_excerpt(), 0,100); ?>
+    <?php 
+		$content = get_the_content();
+		$trimmed_content = wp_trim_words( $content, 10 );
+		echo $trimmed_content;
+    ?><a class="read-more pull-right" href="<?php the_permalink() ?>"> ...Read More</a>
+    <div class="like-button"><?php echo sharing_display(); ?><?php echo fb_like_button(); ?></div>
+
+  	</div>
+    
   </div>
 </article>
