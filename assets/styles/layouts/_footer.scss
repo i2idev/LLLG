@@ -16,4 +16,33 @@
 			line-height: 15px;
 		}
 	}
+	.widget_cnss_widget {
+		@extend .col-md-3;
+		.cnss-social-icon {
+
+			&:before {
+				content: "Our social media channel";
+				margin-bottom: 15px;
+				display: block;
+			}
+			text-align: left !important;
+			li.Twitter {
+				a {
+					img {
+						background: $white;
+					}
+				}
+			}
+			li {
+				a {
+					img {
+						width: 35px;
+						height: 35px;
+					}
+				}
+			}
+		}
+	}
+	
+
 }
