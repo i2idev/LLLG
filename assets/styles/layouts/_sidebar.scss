@@ -1,0 +1,64 @@
+.sidebar {
+	border: 1px solid #efefef;
+	border-radius: $rounded;
+	padding-left: $reset;
+	width: 100%;
+	padding: 0 25px;
+	@extend .text-center;
+	.about-author {
+		h1 {
+			font-size: 30px;
+			color: $soft_pink;
+			margin: 30px 0 15px;
+		}
+		.thumbnail {
+			margin-right: 10px;
+			border: 0px;
+			@extend .pull-left;
+			img {
+				border-radius: $rounded2x;
+			}
+		}
+		p{
+			@extend .text-left;
+			color: $dark_blue;
+			font-weight: bold;
+		}
+		.sharedaddy {
+			@extend .hidden;
+		}
+	}
+	.cnss-social-icon {
+		margin: 25px 0;
+		li {
+			margin: 0 5px;
+		}
+	}
+	.widget_search {
+		position: relative;
+		margin: 10px 0;
+		button {
+			border: $reset;
+			&:hover {
+				background: transparent;
+			}
+		}
+		.search-field {
+			border: 1px solid $cyan;
+			border-radius: $rounded2x;
+			width: 100%;
+			padding: 21px 15px;
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
+		}
+		button {
+			position: absolute;
+			right: 0px;
+			top: 7px;
+			background: transparent;
+			color: $cyan;
+		}
+	}
+}
