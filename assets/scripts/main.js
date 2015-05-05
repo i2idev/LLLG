@@ -31,7 +31,7 @@
     // Home page
     'home': {
       init: function() {
-        // JavaScript to be fired on the home page
+        $('.wp-pagenavi .extend:first').css("display","none");
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
