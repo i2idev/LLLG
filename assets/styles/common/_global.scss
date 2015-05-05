@@ -2,6 +2,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	background:url(../images/background-pattern.png) repeat;
 	font-size: 15px;
+	overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6 {
 	font-family: $main-font;

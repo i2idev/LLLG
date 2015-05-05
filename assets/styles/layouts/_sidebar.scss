@@ -3,7 +3,7 @@
 	border-radius: $rounded;
 	padding-left: $reset;
 	width: 100%;
-	padding: 0 25px;
+	padding:25px;
 	@extend .text-center;
 	.about-author {
 		h1 {
@@ -23,6 +23,7 @@
 			@extend .text-left;
 			color: $dark_blue;
 			font-weight: bold;
+			font-size: 14px;
 		}
 		.sharedaddy {
 			@extend .hidden;
@@ -59,6 +60,36 @@
 			top: 7px;
 			background: transparent;
 			color: $cyan;
+		}
+	}
+	.widget_recent_entries {
+		h3 {
+			background: $cyan url('../images/live.png') 5% center no-repeat;
+			color: $white;
+			padding: 5px 0;
+			margin: 35px 0 15px;
+		}
+		a {
+			color: $dark_blue;
+		}
+		ul {
+			list-style-type: none;
+			padding: $reset;
+		}
+	}
+	.rpjc_widget_cat_recent_posts-6 {
+		h3 {
+			background: $soft_pink url('../images/love.png') right center no-repeat;
+		}
+	}
+	.rpjc_widget_cat_recent_posts-4 {
+		h3 {
+			background: $dark_blue url('../images/learn.png') 5% center no-repeat;
+		}
+	}
+	.rpjc_widget_cat_recent_posts-5 {
+		h3 {
+			background: $cyan url('../images/go.png') 95% center no-repeat;
 		}
 	}
 }

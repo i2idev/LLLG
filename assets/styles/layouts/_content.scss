@@ -1,14 +1,18 @@
+.thumbnail {
+	margin-right: 25px;
+}
 .main {
+	margin-top: 35px;
 	.col-md-8 {
 		padding: $reset;
 		.thumbnail {
-			margin-right: 25px;
 			background: $soft_pink;
 			border-radius: $reset;
 			padding: 6px;
 		}
 		article {
 			clear: left;
+			margin-bottom: 25px;
 		}
 		.entry-title {
 			a {
@@ -17,6 +21,8 @@
 		}
 		.entry-summary , time {
 			color: $soft_pink;
+			font-weight: bold;
+			font-size: 14px;
 			iframe {
 				margin-top: 4px;
 			}
@@ -27,8 +33,11 @@
 		}
 	}
 }
-.like-button {
+.single .like-button {
 	margin-top: 13px;
+}
+.like-button {
+	margin-top: 20px;
 }
 .sharedaddy {
 	background: url('../images/social-bg.png') no-repeat;
@@ -80,17 +89,114 @@
 	
 }
 .home  {
+	.latest-news-home {
+		color: $soft_pink;
+		margin: 45px 0 25px;
+	}
 	h2.entry-title {
 		margin: 0 0 8px;
 	}
 	article {
-		margin-bottom: 5px;
-		.pull-left:last-child {
-			width: 75%;
+		margin-bottom: 25px;
+		.read-more {
+			position: relative;
+			top: -35px;
+			background: $dark_blue;
+			color: $cyan;
+			font-weight: bold;
+			padding: 2px 9px;
+			font-size: 12px;
+			border-radius: $rounded2x;
+			
 		}
 	}
-	.read-more {}
+	.slider-pro {
+		background:$cyan;
+  		padding: 8px;
+  		margin-bottom: 25px;
+  		.sp-previous-arrow {
+
+  		}
+  		.sp-bottom-thumbnails {
+  			margin-top: 6px;
+  		}
+  		.sp-thumbnail-container {
+  			opacity: .5;
+  			transition: all 0.30s ease-in-out;
+  			&:hover {
+  				opacity: 1;
+  				transition: all 0.30s ease-in-out;
+  			}
+  		}
+  		.sp-arrow {
+  			width: 30px;
+			height: 30px;
+			cursor: pointer;
+			background: #FFF;
+			border-radius: 50% 50%;
+			opacity: .5;
+  		}
+  		.sp-previous-arrow , .sp-next-arrow{
+  			&:before , &:after {
+  				opacity: 1;
+  				width: 9%;
+  				height: 30%;
+  				background-color: $dark_blue;
+  			}
+  		}
+  		.sp-previous-arrow  {
+  			&:before {
+  				left: 46%;
+  				top: 7px;
+  			}
+  			&:after {
+  				left: 45%;
+  				top: 52%;
+  			}
+  		}
+  		.sp-next-arrow  {
+  			&:before {
+  				right: 40%;
+  				top: 20%
+  			}
+  			&:after {
+  				right: 40%;
+ 				top: 50%;
+  			}
+  		}
+  		.sp-selected-thumbnail {
+  			opacity: 1;
+  			transition: all 0.30s ease-in-out;
+  		}
+	}
 }
 .content .col-md-4 {
 	padding-right: $reset;
+}
+.wp-pagenavi {
+	a , .current , .extend {
+		background: url('../images/sqaure-num-paginate.png') no-repeat;
+		width: 27px;
+		height: 27px;
+		border: $reset;
+		@extend .text-center;
+		display: inline-block;
+		font-family: $main-font;
+		color: $cyan;
+	}
+	.pages , .last , .first {
+		@extend .hidden;
+	}
+	&:first-child .extend {
+		@extend .hidden;
+	}
+	.nextpostslink , .previouspostslink {
+		background: url('../images/next-btn.png') no-repeat;
+		width: 43px;
+		height: 27px;
+		text-indent: 9999px;
+	}
+	.previouspostslink {
+		background: url('../images/prev-btn.png') no-repeat;
+	}
 }
