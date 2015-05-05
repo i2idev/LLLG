@@ -1,15 +1,13 @@
-<!--<header class="banner" role="banner">
-  <div class="container">
-    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php // bloginfo('name'); ?></a>
-    <nav role="navigation">
-      <?php
-      /*if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-      endif;*/
-      ?>
-    </nav>
-  </div>
-</header>-->
+<!-- Facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Facebook -->
 <div class="wrapper container">
   <header>
   <h1 class="outline"><?php bloginfo('name'); ?></h1>
@@ -30,7 +28,7 @@
         wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav']);
       endif;
       ?>
-          </div><!--/.nav-collapse -->
+          </div>
         <div class="subscription-box col-lg-4 col-xs-12 pull-right text-center">
           <h3><?php _e('Subscribe to Our Newsletter !','LLLG'); ?></h3>
           <form>
@@ -38,25 +36,7 @@
             <input type="submit" value="GO" />
           </form>
         </div>
-        </div><!--/.container-fluid -->
+        </div>
       </nav>
   </header>
-  <br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-</div>
+  
