@@ -17,7 +17,7 @@ function body_class($classes) {
 
   // Add class if sidebar is active
   if (Config\display_sidebar()) {
-    $classes[] = 'sidebar-primary';
+    $classes[] = 'home-side';
   }
 
   return $classes;
@@ -31,3 +31,6 @@ function excerpt_more() {
   return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
+
+/**/
+
