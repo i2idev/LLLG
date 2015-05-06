@@ -7,7 +7,7 @@
     </header>
     <div class="entry-content">
       <?php the_content(); ?>
-      <div class="like-button"><?php echo fb_like_button(); ?></div>
+      <div class="like-button"><?php echo fb_like_button(); ?><a class="tweet" href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>" onclick="window.open(this.href,'targetWindow','toolbar=no, location=no, status=no,menubar=no,scrollbars=yes,  resizable=yes, width=500,height=500');return false;"><img src="<?= get_template_directory_uri(); ?>/dist/images/tweet.png" alt="Retweet" /></a></div>
     </div>
     <footer>
       <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>

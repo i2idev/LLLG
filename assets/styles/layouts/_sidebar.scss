@@ -2,6 +2,7 @@
 	border: 1px solid #efefef;
 	border-radius: $rounded;
 	padding-left: $reset;
+	margin-bottom: 30px;
 	width: 100%;
 	padding:25px;
 	@extend .text-center;
@@ -9,7 +10,7 @@
 		h1 {
 			font-size: 30px;
 			color: $soft_pink;
-			margin: 30px 0 15px;
+			margin: 5px 0 15px;
 		}
 		.thumbnail {
 			margin-right: 10px;
@@ -62,19 +63,37 @@
 			color: $cyan;
 		}
 	}
-	.widget_recent_entries {
+	.text-4 {
+		b {
+			color: $soft_pink;
+		}
+		h3 {
+			background: $dark_blue !important;
+		}
+		hr {
+			margin: 10px 0;
+		}
+	}
+	.widget_recent_entries , .text-4 {
 		h3 {
 			background: $cyan url('../images/live.png') 5% center no-repeat;
 			color: $white;
-			padding: 5px 0;
+			padding: 8px 0;
 			margin: 35px 0 15px;
+			text-transform: uppercase;
+			font-size: 19px;
 		}
 		a {
 			color: $dark_blue;
+			font-size: 13px;
+			margin-left: 15px;
 		}
 		ul {
 			list-style-type: none;
 			padding: $reset;
+			li {
+				@extend .text-left;
+			}
 		}
 	}
 	.rpjc_widget_cat_recent_posts-6 {
@@ -92,4 +111,10 @@
 			background: $cyan url('../images/go.png') 95% center no-repeat;
 		}
 	}
+}
+.wp_bannerize {
+	margin: 25px 0 0; 
+}
+.wp-bannerize-support {
+	@extend .hidden;
 }

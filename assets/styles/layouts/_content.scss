@@ -37,7 +37,7 @@
 	margin-top: 13px;
 }
 .like-button {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 .sharedaddy {
 	background: url('../images/social-bg.png') no-repeat;
@@ -94,7 +94,8 @@
 		margin: 45px 0 25px;
 	}
 	h2.entry-title {
-		margin: 0 0 8px;
+		margin: 0 0 4px;
+ 		font-size: 26px;
 	}
 	article {
 		margin-bottom: 25px;
@@ -199,7 +200,19 @@
 	.previouspostslink {
 		background: url('../images/prev-btn.png') no-repeat;
 	}
+	
 }
 .home .page-header {
 	@extend .hidden;
+}
+.tweet{
+	position: relative;
+	top: -37px;
+  	left: 16%;
+}
+.single {
+	.tweet {
+		top: -43px;
+ 		left: 41%;
+	}
 }

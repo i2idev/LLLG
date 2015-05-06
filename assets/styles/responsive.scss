@@ -7,14 +7,32 @@
 			}
 		}
 	}
+	.tweet{
+		left: 19%;
+	}
+	.single {
+		.tweet {
+			left: 66% !important;
+		}
+	}
 }
 @media (max-width: $screen-xs-max) and (orientation: portrait) {
 	.home  {
 		article {
 			.read-more {
-				right: -10px;
+				right: -4px;
 				top: -5px;
 			}
+		}
+	}
+	.tweet{
+		top: -10px;
+		left: 7% !important;
+	}
+	.single {
+		.tweet {
+			top: -17px;
+			left: 79% !important;
 		}
 	}
 }
@@ -62,8 +80,37 @@
 	.home  {
 		article {
 			.pull-left:last-child {
-				width: 65%;
+				width: 69%;
 			}
+		}
+	}
+	.sharedaddy {
+		.sd-content {
+			ul {
+				margin-left: 100px!important;
+			}
+		}
+	}
+	.tweet {
+		left: 19%;
+	}
+	.single {
+		.tweet {
+			left: 47%;
+		}
+	}
+}
+@media (max-width: $screen-md-max)  and (orientation: portrait)  {
+	.home  {
+		article {
+			.pull-left:last-child {
+				width: 70%;
+			}
+		}
+	}
+	.single {
+		.tweet {
+			left: 41%;
 		}
 	}
 }
