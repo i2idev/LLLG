@@ -200,3 +200,6 @@
 		background: url('../images/prev-btn.png') no-repeat;
 	}
 }
+.home .page-header {
+	@extend .hidden;
+}
