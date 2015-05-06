@@ -17,7 +17,7 @@
 	}
 }
 @media (max-width: $screen-xs-max) and (orientation: portrait) {
-	.home  {
+	.home , .search   {
 		article {
 			.read-more {
 				right: -4px;
@@ -77,7 +77,7 @@
 			}
 		}
 	}
-	.home  {
+	.home , .search   {
 		article {
 			.pull-left:last-child {
 				width: 69%;
@@ -131,7 +131,7 @@
 			}
 		}
 	}
-	.home  {
+	.home , .search   {
 		article {
 			.pull-left:last-child {
 				width: 75%;

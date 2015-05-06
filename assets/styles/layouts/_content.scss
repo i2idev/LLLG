@@ -56,119 +56,109 @@
 	}
 	.sd-content {
 		ul {
-		margin-left: 110px!important;
-		padding-top: 4px !important;
-		li.share-facebook {
-			background: url('../images/facebook.png') no-repeat;
-			background-size: 20px 20px; 
-		}
-		li.share-twitter {
-			background: url('../images/twitter.png') no-repeat;
-			background-size: 20px 20px; 
-		}
-		li.share-google-plus-1 {
-			background: url('../images/google.png') no-repeat;
-			background-size: 20px 20px; 
-		}
-		li.share-pinterest {
-			background: url('../images/pinterst.png') no-repeat;
-			background-size: 20px 20px; 
-		}
-		li {
-			a.sd-button {
-				background: transparent !important;
-				width: 20px !important;
-				height: 20px !important;
-				&:before {
-					@extend .hidden;
+			margin-left: 110px!important;
+			padding-top: 4px !important;
+			li.share-facebook {
+				background: url('../images/facebook.png') no-repeat;
+				background-size: 20px 20px; 
+			}
+			li.share-twitter {
+				background: url('../images/twitter.png') no-repeat;
+				background-size: 20px 20px; 
+			}
+			li.share-google-plus-1 {
+				background: url('../images/google.png') no-repeat;
+				background-size: 20px 20px; 
+			}
+			li.share-pinterest {
+				background: url('../images/pinterst.png') no-repeat;
+				background-size: 20px 20px; 
+			}
+			li {
+				a.sd-button {
+					background: transparent !important;
+					width: 20px !important;
+					height: 20px !important;
+					&:before {
+						@extend .hidden;
+					}
 				}
 			}
 		}
 	}
-	}
 	
 }
-.home  {
+.home , .search  {
 	.latest-news-home {
 		color: $soft_pink;
 		margin: 45px 0 25px;
 	}
 	h2.entry-title {
 		margin: 0 0 4px;
- 		font-size: 26px;
+		font-size: 26px;
 	}
 	article {
 		margin-bottom: 25px;
-		.read-more {
-			position: relative;
-			top: -35px;
-			background: $dark_blue;
-			color: $cyan;
-			font-weight: bold;
-			padding: 2px 9px;
-			font-size: 12px;
-			border-radius: $rounded2x;
-			
-		}
+		
 	}
 	.slider-pro {
 		background:$cyan;
-  		padding: 8px;
-  		margin-bottom: 25px;
-  		.sp-previous-arrow {
+		padding: 8px;
+		margin-bottom: 25px;
+		.sp-previous-arrow {
 
-  		}
-  		.sp-bottom-thumbnails {
-  			margin-top: 6px;
-  		}
-  		.sp-thumbnail-container {
-  			opacity: .5;
-  			transition: all 0.30s ease-in-out;
-  			&:hover {
-  				opacity: 1;
-  				transition: all 0.30s ease-in-out;
-  			}
-  		}
-  		.sp-arrow {
-  			width: 30px;
+		}
+		.sp-bottom-thumbnails {
+			margin-top: 6px;
+		}
+		.sp-thumbnail-container {
+			opacity: .5;
+			transition: all 0.30s ease-in-out;
+			&:hover {
+				opacity: 1;
+				transition: all 0.30s ease-in-out;
+			}
+		}
+		.sp-arrow {
+			width: 30px;
 			height: 30px;
 			cursor: pointer;
 			background: #FFF;
 			border-radius: 50% 50%;
 			opacity: .5;
-  		}
-  		.sp-previous-arrow , .sp-next-arrow{
-  			&:before , &:after {
-  				opacity: 1;
-  				width: 9%;
-  				height: 30%;
-  				background-color: $dark_blue;
-  			}
-  		}
-  		.sp-previous-arrow  {
-  			&:before {
-  				left: 46%;
-  				top: 7px;
-  			}
-  			&:after {
-  				left: 45%;
-  				top: 52%;
-  			}
-  		}
-  		.sp-next-arrow  {
-  			&:before {
-  				right: 40%;
-  				top: 20%
-  			}
-  			&:after {
-  				right: 40%;
- 				top: 50%;
-  			}
-  		}
-  		.sp-selected-thumbnail {
-  			opacity: 1;
-  			transition: all 0.30s ease-in-out;
-  		}
+		}
+		.sp-previous-arrow , .sp-next-arrow{
+			&:before , &:after {
+				opacity: 1;
+				width: 9%;
+				height: 30%;
+				background-color: $dark_blue;
+			}
+		}
+		.sp-previous-arrow  {
+			&:before {
+				left: 46%;
+				top: 7px;
+			}
+			&:after {
+				left: 45%;
+				top: 52%;
+			}
+		}
+		.sp-next-arrow  {
+			&:before {
+				right: 40%;
+				top: 20%
+			}
+			&:after {
+				right: 40%;
+				top: 50%;
+			}
+		}
+		.sp-selected-thumbnail {
+			opacity: 1;
+			transition: all 0.30s ease-in-out;
+		}
 	}
 }
 .content .col-md-4 {
@@ -205,14 +195,25 @@
 .home .page-header {
 	@extend .hidden;
 }
+.read-more {
+	position: relative;
+	top: -35px;
+	background: $dark_blue;
+	color: $cyan;
+	font-weight: bold;
+	padding: 2px 9px;
+	font-size: 12px;
+	border-radius: $rounded2x;
+
+}
 .tweet{
 	position: relative;
 	top: -37px;
-  	left: 16%;
+	left: 16%;
 }
 .single {
 	.tweet {
 		top: -43px;
- 		left: 41%;
+		left: 41%;
 	}
 }
