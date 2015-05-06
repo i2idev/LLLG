@@ -30,4 +30,5 @@
     </div>
     <?php  dynamic_sidebar('home-side'); ?>
   </div>
+  <?php if(function_exists( 'wp_bannerize' )) wp_bannerize(); ?>
 </div>
