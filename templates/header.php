@@ -24,9 +24,27 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
           <?php
-      if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav']);
-      endif;
+      
+
+
+ wp_nav_menu( array(
+                'theme_location'    => 'primary_navigation',
+                'depth'             => 2,
+                'menu_class'        => 'nav navbar-nav',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+            );
+
+
+
+
+
+
+
+
+
+
+      
       ?>
           </div>
         <div class="subscription-box col-lg-4 col-xs-12 pull-right text-center">
