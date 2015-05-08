@@ -16,11 +16,28 @@ header {
 			}
 		}
 		.navbar-nav {
+			.open {
+				.dropdown-menu {
+					border: $reset;
+					box-shadow: none;
+				}
+				a {
+					background: transparent;
+					@extend .pull-left;
+					&:focus , &:hover , &:active {
+						background: transparent;
+						color: $soft_pink;
+					}
+				}
+			}
 			li {
 				a {
 					font-family: $main-font;
-					font-size: 24px;
+					font-size: 23px;
 					color: $cyan;
+					&:focus {
+						  color: $soft_pink;
+					}
 				}
 			}
 		}
