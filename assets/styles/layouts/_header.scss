@@ -16,6 +16,12 @@ header {
 			}
 		}
 		.navbar-nav {
+			.active  {
+				a , &:hover , &:focus {
+					background-color:transparent;
+					color: $soft_pink;
+				}
+			}
 			.open {
 				.dropdown-menu {
 					border: $reset;
@@ -68,6 +74,9 @@ header {
 			background: #ea017d;
 			width: 15%;
 			margin-left: 2px;
+		}
+		input[type="email"] {
+			  color: #6F6F6F;
 		}
 	}
 }

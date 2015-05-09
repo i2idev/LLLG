@@ -1,0 +1,29 @@
+
+<div class="col-md-8 col-xs-12">
+
+
+			
+<h1><?php  single_cat_title(); ?></h1>
+<hr />
+<?php while (have_posts()) : the_post(); ?>
+  <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+
+<?php endwhile; ?>
+</div>
+
+<div class="col-md-4 col-xs-12">
+	<div class="sidebar">
+		<div class="about-author clearfix">
+			<?php 
+				$the_query = new WP_Query( 'page_id=25' );
+				while ($the_query -> have_posts()) : $the_query -> the_post();
+			?>
+			<h1><?php the_title(); ?></h1>
+			<div class="thumbnail"><?php the_post_thumbnail(); ?></div>
+			<?php the_excerpt(); ?>
+		    <?php endwhile;?> <!-- About author -->
+		</div>
+		<?php  dynamic_sidebar('sidebar-primary'); ?>
+	</div>
+	<?php if(function_exists( 'wp_bannerize' )) wp_bannerize(); ?>
+</div>

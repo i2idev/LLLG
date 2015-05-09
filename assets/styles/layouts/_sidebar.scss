@@ -74,7 +74,7 @@
 			margin: 10px 0;
 		}
 	}
-	.widget_recent_entries , .text-4 {
+	.widget_recent_entries , .text-4 , .widget_categories {
 		h3 {
 			background: $cyan url('../images/live.png') 5% center no-repeat;
 			color: $white;
@@ -109,6 +109,23 @@
 	.rpjc_widget_cat_recent_posts-5 {
 		h3 {
 			background: $cyan url('../images/go.png') 95% center no-repeat;
+		}
+	}
+	.widget_categories {
+		h3 {
+			background: $dark_blue;
+		}
+		ul {
+			margin: $reset;
+			padding: $reset;
+			list-style: none;
+			li {
+				@extend .text-left;
+				border-bottom: 1px solid #ddd;
+				margin-bottom: 1px;
+				padding: 5px;
+				text-transform: uppercase;
+			}
 		}
 	}
 }

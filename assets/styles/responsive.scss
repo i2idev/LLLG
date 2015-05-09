@@ -1,9 +1,12 @@
 
 @media (max-width: $screen-xs-max) { 
-	.home  {
+	.home , .blog , .search , .archive , .single .tweet {
 		article {
 			.pull-left:last-child {
 				width: 100% !important;
+			}
+			.read-more {
+				right: 20px !important;
 			}
 		}
 	}
@@ -17,10 +20,10 @@
 	}
 }
 @media (max-width: $screen-xs-max) and (orientation: portrait) {
-	.home , .search   {
+	.home , .search , .blog , .archive  {
 		article {
 			.read-more {
-				right: -4px;
+				right: 20px;
 				top: -5px;
 			}
 		}
@@ -77,10 +80,14 @@
 			}
 		}
 	}
-	.home , .search   {
+	.home , .search , .blog , .archive  {
 		article {
 			.pull-left:last-child {
 				width: 69%;
+			}
+			.read-more {
+				top: -5px;
+  				right: 8px;
 			}
 		}
 	}
@@ -101,10 +108,14 @@
 	}
 }
 @media (max-width: $screen-md-max)  and (orientation: portrait)  {
-	.home  {
+	.home , .search , .blog , .archive  {
 		article {
 			.pull-left:last-child {
 				width: 70%;
+			}
+			.read-more {
+				top: -35px;
+  				right: -22px;
 			}
 		}
 	}
@@ -126,12 +137,12 @@
 					}
 				}
 				.navbar-nav {
-					margin-left: 60px;
+					margin-left: 30px;
 				}
 			}
 		}
 	}
-	.home , .search   {
+	.home , .search , .blog , .archive  {
 		article {
 			.pull-left:last-child {
 				width: 75%;
