@@ -1,4 +1,3 @@
-
 <?get_template_part('templates/page', 'header'); ?>
 
 <div class="col-md-8 col-xs-12">
@@ -36,5 +35,5 @@
 		</div>
 		<?php  dynamic_sidebar('home-side'); ?>
 	</div>
-	<?php if(function_exists( 'wp_bannerize' )) wp_bannerize(); ?>
+	
 </div>
