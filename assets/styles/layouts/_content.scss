@@ -238,7 +238,7 @@
 .single {
 	.tweet {
 		top: -41px;
-		left: 41%;
+		left: 50%;
 	}
 }
 .category , .blog {
@@ -280,5 +280,15 @@
 	img {
 		@extend .img-responsive;
 		margin: 0 auto;
+	}
+}
+.sp-image {
+  width: auto !important;
+  margin: 0 auto !important;
+  height: 100% !important;
+}
+.entry-content {
+	img {
+		@extend .img-responsive;
 	}
 }

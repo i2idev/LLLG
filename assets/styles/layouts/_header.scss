@@ -17,19 +17,29 @@ header {
 		}
 		.navbar-nav {
 			.active  {
-				a , &:hover , &:focus {
+				a {
 					background-color:transparent;
 					color: $soft_pink;
+					&:hover , &:focus {
+						background-color:transparent;
+						color: $soft_pink;
+					}
 				}
 			}
 			.open {
 				.dropdown-menu {
 					border: $reset;
+					padding: $reset;
 					box-shadow: none;
+					width: 80%;
+  					margin: 0 auto;
+  					a {
+						border-bottom: 1px solid #F2F2F2;
+						margin: 5px 0;
+					}
 				}
 				a {
 					background: transparent;
-					@extend .pull-left;
 					&:focus , &:hover , &:active {
 						background: transparent;
 						color: $soft_pink;
